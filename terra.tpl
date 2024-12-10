@@ -46,7 +46,7 @@ enabled=1
 enabled_metadata=1
 metadata_expire=4h
 
-{% if releasever == "rawhide" or releasever >= 41 %}
+{% if releasever == "rawhide" or (releasever | int) >= 41 %}
 
 [terra-extras]
 name=Terra $releasever (Extras)
