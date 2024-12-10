@@ -46,6 +46,22 @@ enabled=1
 enabled_metadata=1
 metadata_expire=4h
 
+{% if releasever == "rawhide" or releasever >= 41 %}
+
+[terra-extras]
+name=Terra $releasever (Extras)
+metalink=https://tetsudou.fyralabs.com/metalink?repo=terra$releasever-extras&arch=$basearch
+metadata_expire=6h
+type=rpm
+gpgcheck=1
+gpgkey=https://repos.fyralabs.com/terra$releasever-extras/key.asc
+repo_gpgcheck=1
+enabled=1
+enabled_metadata=1
+priority=150
+
+{% endif %}
+
 # Only used for multilib builds, pulls straight from fedora koji
 # Use /rawhide/latest instead of /f{{ releasever }}-build/latest for rawhide
 [local-f{{ releasever }}-build]
