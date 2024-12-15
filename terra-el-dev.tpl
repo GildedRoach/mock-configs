@@ -126,11 +126,3 @@ gpgkey=file:///usr/share/distribution-gpg-keys/centos/RPM-GPG-KEY-CentOS-Officia
 gpgcheck=1
 enabled=0
 """
-
-[local]
-name=Extra Packages for Enterprise Linux $releasever - Koji Local - BUILDROOT ONLY!
-baseurl=https://kojipkgs.fedoraproject.org/repos/epel10.0-build/latest/$basearch/
-cost=2000
-enabled=1
-skip_if_unavailable=False
-"""
