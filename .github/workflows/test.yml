@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     container:
       image: ghcr.io/terrapkg/builder:frawhide
       options: --cap-add=SYS_ADMIN --privileged
@@ -51,7 +51,7 @@ jobs:
             anda-build/rpm/srpm/*
 
   build-el10:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     container:
       image: ghcr.io/terrapkg/builder:el10
       options: --cap-add=SYS_ADMIN --privileged
