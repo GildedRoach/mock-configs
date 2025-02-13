@@ -38,7 +38,7 @@ mirrorlist=https://kitten.mirrors.almalinux.org/mirrorlist/$releasever-kitten/ba
 # baseurl=https://kitten.repo.almalinux.org/$releasever-kitten/BaseOS/$basearch/os/
 enabled=1
 gpgcheck=1
-gpgkey=file:///usr/share/distribution-gpg-keys/alma/RPM-GPG-KEY-AlmaLinux-10
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux-10
 skip_if_unavailable=False
 
 [appstream]
@@ -47,7 +47,7 @@ mirrorlist=https://kitten.mirrors.almalinux.org/mirrorlist/$releasever-kitten/ap
 # baseurl=https://kitten.repo.almalinux.org/$releasever-kitten/AppStream/$basearch/os/
 enabled=1
 gpgcheck=1
-gpgkey=file:///usr/share/distribution-gpg-keys/alma/RPM-GPG-KEY-AlmaLinux-10
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux-10
 
 [crb]
 name=AlmaLinux Kitten $releasever - CRB
@@ -55,7 +55,7 @@ mirrorlist=https://kitten.mirrors.almalinux.org/mirrorlist/$releasever-kitten/cr
 # baseurl=https://kitten.repo.almalinux.org/$releasever-kitten/CRB/$basearch/os/
 enabled=1
 gpgcheck=1
-gpgkey=file:///usr/share/distribution-gpg-keys/alma/RPM-GPG-KEY-AlmaLinux-10
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux-10
 
 [extras-common]
 name=AlmaLinux Kitten $releasever - Extras
@@ -63,7 +63,7 @@ mirrorlist=https://kitten.mirrors.almalinux.org/mirrorlist/$releasever-kitten/ex
 # baseurl=https://kitten.repo.almalinux.org/$releasever-kitten/extras-common/$basearch/os/
 enabled=1
 gpgcheck=1
-gpgkey=file:///usr/share/distribution-gpg-keys/alma/RPM-GPG-KEY-AlmaLinux-10
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux-10
 
 [terra]
 name=Terra EL $releasever
@@ -91,7 +91,9 @@ priority=150
 
 [epel]
 name=Extra Packages for Enterprise Linux $releasever - $basearch
-metalink=https://mirrors.fedoraproject.org/metalink?repo=epel-{{ releasever_major }}&arch=$basearch
-gpgkey=file:///usr/share/distribution-gpg-keys/epel/RPM-GPG-KEY-EPEL-{{ releasever_major }}
+metalink=https://mirrors.fedoraproject.org/metalink?repo=epel-$releasever&arch=$basearch
+gpgkey=file:///usr/share/distribution-gpg-keys/epel/RPM-GPG-KEY-EPEL-$releasever
 gpgcheck=1
 countme=1
+
+"""
