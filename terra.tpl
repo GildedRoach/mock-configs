@@ -2,7 +2,7 @@ config_opts['root'] = 'terra-{{ releasever }}-{{ target_arch }}'
 config_opts['dist'] = 'fc{{ releasever }}'  # only useful for --resultdir variable subst
 config_opts['macros']['%dist'] = '.fc{{ releasever }}'
 #config_opts['package_manager'] = 'dnf{% if releasever != "rawhide" %}5{% endif %}'
-config_opts['package_manager'] = 'dnf4'
+config_opts['package_manager'] = 'dnf'
 config_opts['extra_chroot_dirs'] = [ '/run/lock', ]
 #config_opts['bootstrap_image'] = 'registry.fedoraproject.org/fedora:{{ releasever }}'
 #config_opts['bootstrap_image'] = 'docker.io/library/fedora:{{ releasever }}'
