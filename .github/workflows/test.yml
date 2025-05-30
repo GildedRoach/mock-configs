@@ -74,7 +74,7 @@ jobs:
         run: cp -v mock-configs/*.tpl /etc/mock/templates/
 
       - name: Build with Andaman
-        run: anda build terra/mock-configs -c mock-configs/terra-el10-dev-x86_64.cfg
+        run: anda build terra/mock-configs -c mock-configs/terra-el10-x86_64.cfg
 
       - uses: actions/upload-artifact@v4
         with:
