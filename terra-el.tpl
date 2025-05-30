@@ -43,7 +43,7 @@ gpgkey=file:///usr/share/distribution-gpg-keys/alma/RPM-GPG-KEY-AlmaLinux-10
 
 [appstream]
 name=AlmaLinux {{ releasever }} - AppStream
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/{{ releasever }}/appstream{{ target_arch }}
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/{{ releasever }}/appstream
 # baseurl=https://repo.almalinux.org/almalinux/{{ releasever }}/AppStream/{{ target_arch }}/os/
 enabled=1
 gpgcheck=1
@@ -52,7 +52,7 @@ gpgkey=file:///usr/share/distribution-gpg-keys/alma/RPM-GPG-KEY-AlmaLinux-10
 
 [crb]
 name=AlmaLinux {{ releasever }} - CRB
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/{{ releasever }}/crb{{ target_arch }}
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/{{ releasever }}/crb
 # baseurl=https://repo.almalinux.org/almalinux/{{ releasever }}/CRB/{{ target_arch }}/os/
 enabled=1
 gpgcheck=1
@@ -61,7 +61,7 @@ gpgkey=file:///usr/share/distribution-gpg-keys/alma/RPM-GPG-KEY-AlmaLinux-10
 
 [extras]
 name=AlmaLinux {{ releasever }} - Extras
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/{{ releasever }}/extras{{ target_arch }}
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/{{ releasever }}/extras
 # baseurl=https://repo.almalinux.org/almalinux/{{ releasever }}/extras/{{ target_arch }}/os/
 enabled=1
 gpgcheck=1
