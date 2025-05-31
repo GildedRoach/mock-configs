@@ -34,7 +34,7 @@ user_agent={{ user_agent }}
 
 [baseos]
 name=AlmaLinux {{ releasever }} - BaseOS
-mirrorlist=https://mirrors.almalinux.org/mirrorlist/{{ releasever }}/baseos{{ mirrorlist_arch }}
+mirrorlist=https://mirrors.almalinux.org/mirrorlist/{{ releasever }}/baseos
 # baseurl=https://repo.almalinux.org/almalinux/{{ releasever }}/BaseOS/{{ target_arch }}/os/
 enabled=1
 gpgcheck=1
