@@ -98,5 +98,13 @@ metalink=https://mirrors.fedoraproject.org/metalink?repo=epel-{{ releasever }}&a
 gpgkey=file:///usr/share/distribution-gpg-keys/epel/RPM-GPG-KEY-EPEL-{{ releasever }}
 gpgcheck=1
 countme=1
+ 
+[adoptium-temurin-java-repository]
+name=Adoptium
+baseurl=https://packages.adoptium.net/artifactory/rpm/centos/$releasever/$basearch
+enabled=0
+gpgcheck=1
+gpgkey=https://packages.adoptium.net/artifactory/api/gpg/key/public
+enabled_metadata=1
 
 """
