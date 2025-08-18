@@ -99,6 +99,15 @@ gpgkey=file:///usr/share/distribution-gpg-keys/fedora/RPM-GPG-KEY-fedora-{{ rele
 gpgcheck=1
 skip_if_unavailable=False
 {% endif %}
+
+[adoptium-temurin-java-repository]
+name=Adoptium
+baseurl=https://packages.adoptium.net/artifactory/rpm/fedora/$releasever/$basearch
+enabled=0
+gpgcheck=1
+gpgkey=https://packages.adoptium.net/artifactory/api/gpg/key/public
+enabled_metadata=1
+
 """
 
 
